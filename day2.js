@@ -1,5 +1,7 @@
 // Every method is a function, but not every function is a method.
 
+'use strict';
+
 let myRobot = {
     dancing: function(){
         console.log('i am dancing');
@@ -241,5 +243,33 @@ let dog = {
     }
 }
 dog.actions();
+
+
+let javaScriptIsFun = true;
+console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+
+// console.log(typeof null);
+
+let x = 100;
+x--;
+console.log(x);
+x--;
+console.log(x);
+
+// let favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+
+function calcAge1(birthYear) {
+    return 1991 - birthYear
+}
+
+let age1 = calcAge1(2007);
+console.log(age1);
+
+
+
+
 
 
