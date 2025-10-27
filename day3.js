@@ -46,26 +46,3 @@ let userObj = {
 }
 
 console.log(userObj.isAlive);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

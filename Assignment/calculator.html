@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav">
+        <div class="left">
+        <i class="fa-solid fa-calculator"></i> <span>calculator</span>
+        </div>
+
+        <div class="right">
+            <i class="fa-solid fa-minus"></i>
+            <i class="fa-solid fa-window-maximize"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        </div>
+
+        <div class="nav2">
+            <div class="nav2.left">
+                <i class="fa-solid fa-bars"></i>
+                <span>Standard</span>
+                <i class="fa-solid fa-arrows-up-down-left-right"></i>
+            </div>
+            <div class="nav2.right">
+                <i class="fa-solid fa-gauge-simple-high"></i>
+            </div>
+        
+        </div>
+
+        <input type="text" class="input1" id="memory">
+        <input type="text" class="input2" id="userInput">
+
+        <span class="static">MC</span>
+        <span class="static">MR</span>
+        <span class="static">M+</span>
+        <span class="static">M-</span>
+        <span class="static">MS</span>
+        <span class="static">M-</span>
+
+        <div class="dyn">
+        <button class="dynamic" onclick="operators('%')">%</button>
+        <button class="dynamic" onclick="clearAll()">CE</button>
+        <button class="dynamic" onclick="clearOne()">C</button>
+        <button class="dynamic" onclick="erase()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+
+        <div class="dyn">
+        <button class="dynamic" onclick="operators('1/x')">1/x</button>
+        <button class="dynamic" onclick="operators('x^2')">x^2</button>
+        <button class="dynamic" onclick="operators('√x')"><i class="fa-solid fa-square-root-variable"></i></button>
+        <button class="dynamic" onclick="operators('÷')">÷</button>
+        </div>
+
+        <div class="dyn">
+        <button class="dynamic" onclick="digit(7)">7</button>
+        <button class="dynamic" onclick="digit(8)">8</button>
+        <button class="dynamic" onclick="digit(9)">9</button>
+        <button class="dynamic" onclick="operators('×')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="dyn">
+        <button class="dynamic" onclick="digit(4)">4</button>
+        <button class="dynamic" onclick="digit(5)">5</button>
+        <button class="dynamic" onclick="digit(6)">6</button>
+        <button class="dynamic" onclick="operators('-')">-</button>
+        </div>
+
+        <div class="dyn">
+        <button class="dynamic" onclick="digit(1)">1</button>
+        <button class="dynamic" onclick="digit(2)">2</button>
+        <button class="dynamic" onclick="digit(3)">3</button>
+        <button class="dynamic" onclick="operators('+')">+</button>
+        </div>
+
+        <div class="dyn">
+        <button class="dynamic">+-</button>
+        <button class="dynamic" onclick="digit(0)">0</button>
+        <button class="dynamic" onclick="decimal('.')">.</button>
+        <button class="dynamic" onclick="equalsTo()">=</button>
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>

@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+body {
+padding: 10px;
+}
+
+h1 {
+font-size: 20px;
+text-align: center;
+}
+
+input {
+width: 100%;
+padding: 8px;
+margin-bottom: 10px;
+font-size: 16px;
+}
+
+button {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border-radius: 6px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+font-size: 14px;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+word-wrap: break-word;
+}
+}
+
+@media screen and (max-width: 480px) {
+h1 {
+font-size: 18px;
+}
+
+button {
+font-size: 14px;
+padding: 8px;
+}
+
+table {
+font-size: 12px;
+}
+}

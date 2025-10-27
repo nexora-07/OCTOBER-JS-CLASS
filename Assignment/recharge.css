@@ -81,3 +81,92 @@ select, input{
 th{
     background-color: rgb(247, 239, 239);
 } */
+
+
+@media screen and (max-width: 768px) {
+.recharge-card {
+width: 90%;
+}
+
+
+
+
+.network, .pin {
+display: block;
+text-align: left;
+margin: 15px 0;
+}
+
+
+
+
+.pin button {
+display: block;
+margin: 10px 0 0;
+width: 100%;
+}
+
+
+
+
+select, input {
+width: 100%;
+margin: 8px 0;
+}
+
+
+
+
+.code-generator {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+gap: 10px;
+}
+
+
+
+
+.code-generator button {
+width: 100%;
+}
+
+
+
+
+table {
+font-size: 14px;
+}
+
+
+
+
+th, td {
+padding: 6px;
+word-wrap: break-word;
+}
+
+
+
+
+.data {
+overflow-x: auto;
+}
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+h1 {
+font-size: 18px;
+}
+
+
+
+
+.pin button, .code-generator button {
+font-size: 14px;
+padding: 10px;
+}
+}

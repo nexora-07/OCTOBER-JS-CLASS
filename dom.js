@@ -53,8 +53,8 @@ function updateName(){
 
 
 function canCalculate(){
-  let firstInp = Number(document.getElementById('firstInp').value);
-  let oper = document.getElementById('operator');
+  let oper = document.getElementById('operator');  let firstInp = Number(document.getElementById('firstInp').value);
+
   let secondInp = Number(document.getElementById('secondInp').value);
   let answer = document.getElementById('answer')
 
